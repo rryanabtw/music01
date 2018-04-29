@@ -1,24 +1,826 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P0p-hz-vJ6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--男歌手-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DJ-TX-oGK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="HigherBrothers">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="csa-ob-gVi" kind="show" id="NCY-lZ-STZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytq-FH-a0s">
+                                <rect key="frame" x="0.0" y="142" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="XXXtentacion">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7X-MU-Wz7">
+                                <rect key="frame" x="0.0" y="229" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post Malone">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post malone" translatesAutoresizingMaskIntoConstraints="NO" id="rHK-SV-RJP">
+                                <rect key="frame" x="16" y="238" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfI-4z-a5E">
+                                <rect key="frame" x="0.0" y="316" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Playboi Carti">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playboi" translatesAutoresizingMaskIntoConstraints="NO" id="jNc-dZ-FQ4">
+                                <rect key="frame" x="16" y="325" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-ON-0OO">
+                                <rect key="frame" x="0.0" y="403" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Migos">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="migos" translatesAutoresizingMaskIntoConstraints="NO" id="GCH-bv-vbo">
+                                <rect key="frame" x="16" y="412" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQg-c5-Xqu">
+                                <rect key="frame" x="0.0" y="490" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Trippie redd">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trippie redd" translatesAutoresizingMaskIntoConstraints="NO" id="Wcd-IE-v5W">
+                                <rect key="frame" x="16" y="499" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="higherbrother" translatesAutoresizingMaskIntoConstraints="NO" id="klx-DN-4ij">
+                                <rect key="frame" x="16" y="73" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xxxtentacion" translatesAutoresizingMaskIntoConstraints="NO" id="nme-82-F9p">
+                                <rect key="frame" x="16" y="151" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="男歌手" id="mOD-7q-Z2d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1756" y="114.69265367316342"/>
+        </scene>
+        <!--Higher Brothers-->
+        <scene sceneID="ArP-sa-Fcy">
+            <objects>
+                <viewController id="csa-ob-gVi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SuR-kz-QPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLt-ac-uXF">
+                                <rect key="frame" x="0.0" y="337" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Made in China">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pck-3d-lVe" kind="show" id="jVl-Ng-268"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSJ-cE-xU7">
+                                <rect key="frame" x="0.0" y="376" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Wechat">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cmQ-NY-DB1" kind="show" id="Uhb-Lj-4hu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndq-Hh-gbY">
+                                <rect key="frame" x="0.0" y="416" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="7-11">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hl2-hT-GMh" kind="show" id="GmD-rT-fFY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="higherbrother" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-cQ-rR5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wr2-Pz-9UO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Higher Brothers" id="9Eb-DW-oLB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M51-mw-62J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="-574.36281859070471"/>
+        </scene>
+        <!--Wechat-->
+        <scene sceneID="ZBL-wJ-POV">
+            <objects>
+                <viewController id="cmQ-NY-DB1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4V-ab-Rec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wechat mv" translatesAutoresizingMaskIntoConstraints="NO" id="i8C-c9-Hcz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="StK-dd-V56">
+                                <rect key="frame" x="0.0" y="337" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">What the fu...?
+Yeah higher, yeah higher, yeah higher
+There's no Skype, no Facebook, no Twitter, no Instagram
+We use WeChat
+Yo Keith, tell me your WeChat number
+
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+
+我打開 我打開 我打開打開微信
+
+朋友圈出售名牌包衣服有賣貂皮
+心靈雞湯的作用基本為零對於你
+賺錢的機會只給我不給你沒時間
+我打開微信不是來聽你BB這些
+而最終她成為代購
+我沒能挽留 相冊有整容前後
+幾十條垃圾我都懶得刪
+網友撕逼笑嘻嘻坐山觀虎鬥
+索取我財產的套路
+不小心暴露 沒能夠一帆風順
+一千個聯繫人九百個辣妹
+我現在還單身就白出來混
+
+妹都愛跟我聊騷因為I'm天蠍座
+這都才三點過五分我準備先寫歌
+不斷有消息來打擾
+我跑得脫馬腦殼好多妹都約過
+收了個演出費電話都懶得回
+最近批事情很多
+有好多的批事情
+說之前先問哈你自己
+根本不想聽 根本不想看
+除非是跟我們商量個business
+她們總是對著電話屏幕意淫
+可以來找我 為啥不早說
+今天發生的不再是巧合
+
+我打開微信不是來聽你BB這些
+我打開微信不是來聽你BB那些
+我打開微信不是來聽你BB這些
+我打開 我打開 我打開打開打開
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+我打開
+我打開
+我打開
+我打開
+
+我希望你們不要煩我
+莫的目標的不要煩我
+莫的自製能力不要煩我
+喜歡說謊不要煩我
+我只想要獨自一人
+音樂是我主治醫生
+Mariah Carey coco 李玟
+女人的謊話如此逼真
+我要睡了手機靜音
+微信明天早上看
+滿懷期待醒來發現
+全是輿論在擴散
+Ha 你為你產品推銷
+Ha 他喊我發個紅包
+Ha 當我把所有的廢話都看完後
+皺緊了我的眉毛
+
+剛拿出手機就發現
+九十多條我未讀的消息
+找不到我人的他們居然
+比我的媽媽更著急
+摸不透我的踪跡 工作是我的動力
+我的時間彷彿鋼筋和混泥土
+他們之間根本就沒有縫隙
+安塊靜音的玻璃
+不要再嘗試call me
+任何人都不可以
+包括你也不可以 我還有事情去做
+慢慢嫉妒 多花時間去努力和練習
+長時間堅持下才能進步
+快關掉你手機屏幕
+
+我打開微信不是來聽你BB這些
+我打開微信不是來聽你BB那些
+我打開微信不是來聽你BB這些
+我打開 我打開 我打開打開打開
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+我打開微信不是來聽你BB這些的
+我打開
+我打開
+我打開
+我打開
+
+도망쳐 도망쳐 어디로 멀리로
+나는 사냥해 목숨 대신에 니 체인
+Ice on my wrist, ice cube fist
+Sub-Zero on my neck, Mortal Kombat
+손목엔 피눈물이 흘러
+저승사자가 멀리서 날 불러 여
+내 손목엔 보석이 흘러
+내 주먹봐봐 이건 보석 반지 주먹 여
+날 안죽이면 넌 죽어
+난 진실을 알고있으니깐 쫒겨 여
+세상에다 내 존재를 폭격
+UFO 처럼 모두 가 날 목격 여
+My ninjas wanna do slay
+Hoe ninjas better do pray
+I got some ninjas in Asia
+They don't play but you trying to play
+내 친구들은 안들고 다녀 장난감
+장난감 치곤 너무 무거운 탄창
+자꾸 겁없이 장난치다가 장난만
+가득찬 니 대가리는 쉽게 박살나
+근데도 못믿으면 어쩔껀데 덤벼
+All my ninjas backwoods 폈어
+Drop the valium in my underwater
+난 물밖에서 물안 처럼 걸어
+에이 난피고 마시고 취해
+여전히 마시고 취해
+아직도 마시고 취해
+너무 취해서 못움직이네
+난 뭐든것에 취해있어도
+걱정안해도되
+왜냐면 나는 어떻게든 결국엔
+끝에가서는 전부 다 쟁취하지
+모든걸 내 두 손안에
+난 자주 중국 투어를 했지
+VPN으로 난 finessin'
+WeChat으로 또 finessin'
+Stop BB lil bitch, that shit got me stressin'
+난 자주 중국 투어를 했지
+VPN으로 난 finessin'
+WeChat으로 또 finessin'
+Stop BB lil bitch, that shit got me stressin'</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="js0-6w-0qy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wechat" id="aQJ-Fi-goE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6F-iD-n9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418.4000000000001" y="-367.46626686656674"/>
+        </scene>
+        <!--7-11-->
+        <scene sceneID="qRN-nq-rrI">
+            <objects>
+                <viewController id="hl2-hT-GMh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anY-Ln-PmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Me7-83-MSf">
+                                <rect key="frame" x="0.0" y="336" width="375" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">7-11, 7-11, 7-11, 7-11
+7-11, 7-11, 7-11, 7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+
+两三点钟 想填饱肚子我会去7-11
+在我眼中 最美味可口的全装进包包
+我胃口太大 全都能装下 自己都感到害怕
+不担心敲诈 还非常便宜 全靠实惠的卖价
+把便当给我加热 用准确时间加热
+你看到我开的凯迪拉克 就晓得了不用给我打折
+我一般喝矿泉水 穿的是undefeated
+张张嘴 美食你相当美 味道就像香水
+有日本的饭团和泰国的泡面让我神魂颠倒
+都摆在了面前不会让你抱歉美味可以担保
+买蛋糕还是买汉堡 被选择恐惧症干扰
+毛了我都买 反正老子有钱再加一份煎饺
+
+7-11, 7-11, 7-11, 7-11
+7-11, 7-11, 7-11, 7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+
+我关上门把后朴鼻而来神秘的味道
+琳琅满目的灵感像收银记塞满钞票
+饭菜和沙拉都选择最纯天然的配料
+爱如潮水的我心如商品般把你围绕
+Yeah my honey嫌我苗条成电线杆录成歌饿的我睡不着觉
+披上了羽绒服下身穿沙滩裤洛杉矶穿法在店里聊聊
+监控视频里的knowknow中指对向监控的动作 I love you forever
+黑夜里便利店散发的光芒蔓延到了街道逛多久whatever
+Huh yeah
+我猜不到 送货的司机今天晚上到底几点来
+Huh yeah
+吃宵夜会长胖 自信的吹口哨 500斤很拿样
+
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+
+时间 不够用 我的每天安排都很饱满
+街边边 混到studio 目标成为唱片公司老板
+我们产量高 写歌染上瘾 海尔兄弟工作不分早晚
+没空出去耍 没空看电影我的女朋友都对我相当反感
+但7-11我每天都切 补充了精力好继续熬夜
+加热个盒饭再配一杯热饮花分钟把它们带回巢穴
+除了吃饭睡觉写歌making beats 其他的事都是多余
+收银员的嘴巴笑来捂到起 原来他是我们歌迷
+24/7 还就是我们最大的区别
+24/7 我手上的败将们前途是漆黑
+7-11补充我能量又打了针鸡血
+7-11
+Higher Brothers
+
+7-11, 7-11, 7-11, 7-11
+7-11, 7-11, 7-11, 7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11
+每天去7-11 每天去7-11 每天去7-11 每天去7-11</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7-11 mv" translatesAutoresizingMaskIntoConstraints="NO" id="qzW-8I-Kbc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="U5X-Cf-YAA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="7-11" id="Bdq-WZ-gf5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnD-36-t91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4036" y="-468.21589205397305"/>
+        </scene>
+        <!--Made in China-->
+        <scene sceneID="0aL-8j-IgO">
+            <objects>
+                <viewController id="pck-3d-lVe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rtr-RN-ixa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yRa-GU-Llo">
+                                <rect key="frame" x="0.0" y="334" width="375" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Rap music?China? What are they even saying? What is this Chinese rap music? Sounds like thry're just saying "Ching chang chong"  My chains, new gold watch, made in China We play pimg pong ball, made in China 給bitch 買點奢侈品 Made in China  She sad she didn't love me She sad she didn't love me She sad she didn't love me She sad she didn't love me
+She lied, she lied She all made in China She all made in China
+She all made in China She all made in China She lied, she lied  鬧鐘把你叫醒 made in China
+牙膏牙刷上面擠 made in China
+把早餐放進陶瓷碗 made in China
+擦唇膏出門打起傘 made in China
+坐到公司裏 旋轉辦公椅
+三百六十度 熟悉的印記
+鋼筆畫了一朵蓮花 cookie需要放點鹽巴
+相框裡面框住全家 全部made in China
+全身上下總有中國貨 亞利桑那也有中文課
+Chinese入侵 local口音
+野火燎原 淋上酒精
+
+Made in China 的冠軍
+Made in China 別挑釁
+Made in China 的貨
+老百姓用的開心
+Made in China 的 know know
+Made in China 的 trap
+Made in China 的 higher
+Made in China 的 帥
+抬頭和觀眾say hello 帶起拳套的我不會退後
+訓練讓我掌握節奏 幾分鐘內裁判宣布KO
+Tell me I'm a good 音樂節舞台的正對面
+Made in china 寓言般的歌詞都兌現
+大晴天醒來我充滿了力量和高昂的鬥志走進錄音棚
+肩膀上扛下的責任就像國家隊贏得尊重用跳水游泳
+現實讓我不斷吸取教訓才會不斷出現重複做過的夢
+跨越了障礙那是我的工作別再抱怨起跑線有所不同
+
+My chains new gold watch made in China
+We play ping pong ball made in China
+給 bitch 買點奢侈品 made in China
+Yeah higher brother black cab made in China
+She said she didn't love me
+She said she didn't love me
+She said she didn't love me
+She lied
+She lied
+She all made in China
+She all made in China
+She all made in China
+She lied
+She lied
+
+I got a bitch up in China
+I like to fuck her vagina
+I get that money, no minor
+Talk about diamonds, I swear they might blind ya
+I got a bitch, I signed her
+I got a bitch, I signed her
+Sike, that bitch she remind her
+I get the money like diamonds
+Bitch I'm in Soho
+I fuck on two bitches, I think that's a hoe hoe
+Lil boi you slow slow
+I'm whippin' that Mazi, I got it from Tokyo
+These bitches foreign everywhere I go
+I get that money everywhere I go
+Wait, they callin' me Dexter
+Two bitches fuck me like feathers
+
+She lie She lie She lie 不要覺得意外
+女孩 女孩 女孩為什麼要離開
+我的上輩子是李白 看我寫歌那麼厲害
+所以不會感到奇怪 十二點的時候叫我起來
+伴奏畫龍點睛 我們那麼年輕
+不是和尚念經 也不可能變心
+桌子上面放的麻將 一瓶老乾媽的辣醬
+外地人會受不了的辣 嘴巴開始發燙
+咋個樣 麻辣燙 回到屬於我的 China town
+四隻手 舞獅子頭 點燃火炮現在是時候
+你無法預料被我嚇一跳 一直圍繞這個話題饒
+Higher 風格屌 啥都弄得到 你們家的東西全部都是中國造
+
+陰陽風水 made in China
+從太極兩儀到八卦陣 made in China
+萬里長城 made in China
+從秦始皇陵到紫禁城 made in China
+You don't really know me
+沒得時間休息
+藏在我的抽屜
+捏在我的手裡
+兄弟我歡迎你來到這五千年歷史中創造著神奇地國度裡
+made in china 能折服你
+淪陷著 nobody save me
+
+My chains new gold watch made in China
+We play ping pong ball made in China
+給 bitch 買點奢侈品 made in China
+Yeah higher brother black cab made in China
+She said she didn't love me
+She said she didn't love me
+She said she didn't love me
+She lied
+She lied
+She all made in China
+She all made in China
+She all made in China
+She lied
+She lied</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="m i c mv" translatesAutoresizingMaskIntoConstraints="NO" id="tdH-za-gE9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2Xf-Ck-nAy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Made in China" id="hz6-r4-CCC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8y-cx-aAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.8000000000002" y="-1076.311844077961"/>
+        </scene>
+        <!--女歌手-->
+        <scene sceneID="kYl-Dm-hyD">
+            <objects>
+                <viewController id="mRA-sn-fer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="liS-0N-npN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-Vb-L8N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dua Lipa">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DWK-5y-M1r" kind="show" id="WOT-1V-Rad"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DUA " translatesAutoresizingMaskIntoConstraints="NO" id="azl-0c-mzX">
+                                <rect key="frame" x="16" y="73" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj5-Ni-BJH">
+                                <rect key="frame" x="0.0" y="138" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clean Bandit">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clean" translatesAutoresizingMaskIntoConstraints="NO" id="NAc-3w-8gF">
+                                <rect key="frame" x="16" y="148" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5J-KL-Zf4">
+                                <rect key="frame" x="0.0" y="216" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bebe Rexha">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bebe" translatesAutoresizingMaskIntoConstraints="NO" id="HUb-dd-Djo">
+                                <rect key="frame" x="16" y="225" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q5h-oQ-Z5C"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="女歌手" id="8VW-EZ-V9I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLq-NY-d2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="827"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ycf-eW-Cby">
+            <objects>
+                <viewController id="6GD-wO-S9o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mB-cy-kpy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="搜尋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-CH-YQ2">
+                                <rect key="frame" x="16" y="20" width="98" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍music" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-bq-xcQ">
+                                <rect key="frame" x="16" y="88" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" keyboardAppearance="light"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sj0-13-nXo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="HTp-Eg-HYN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-Mf-ePe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="1545.8770614692655"/>
+        </scene>
+        <!--Dua Lipa-->
+        <scene sceneID="Q5G-sv-QhW">
+            <objects>
+                <viewController id="DWK-5y-M1r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tcn-g1-3yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DUA " translatesAutoresizingMaskIntoConstraints="NO" id="jTh-CC-czj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcW-DY-gZJ">
+                                <rect key="frame" x="0.0" y="336" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Rules">
+                                    <color key="titleColor" red="0.0" green="0.027450980390000001" blue="0.139046224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZgQ-nA-cGZ" kind="show" id="CyA-kD-E9g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jGb-8L-BCr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dua Lipa" id="Fbl-Ro-UZZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6K-fu-5SU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="826"/>
+        </scene>
+        <!--New Rules-->
+        <scene sceneID="PN4-w5-NYe">
+            <objects>
+                <viewController id="ZgQ-nA-cGZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOW-Sv-soX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new rules" translatesAutoresizingMaskIntoConstraints="NO" id="usn-Oj-qyb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-LF-3a0">
+                                <rect key="frame" x="0.0" y="336" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">One, one, one, one, one
+Talkin' in my sleep at night
+Makin' myself crazy
+(Out of my mind, out of my mind)
+Wrote it down and read it out
+Hopin' it would save me
+(Too many times, too many times)
+My love, he makes me feel like nobody else
+Nobody else
+But my love, he doesn't love me
+So I tell myself, I tell myself
+One, don't pick up the phone
+You know he's only calling 'cause he's drunk and alone
+Two, don't let him in
+You'll have to kick him out again
+Three, don't be his friend
+You know you're gonna wake up in his bed in the morning
+And if you're under him
+You ain't getting over him
+I've got new rules, I count 'em
+I've got new rules, I count 'em
+I've gotta tell them to myself
+I've got new rules, I count 'em
+I've gotta tell them to myself
+I keep pushin' forwards
+But he keeps pullin' me backwards
+(Nowhere to turn, no way)
+(Nowhere to turn, no)
+Now I'm standing back from it
+I finally see the pattern
+(I never learn, I never learn)
+But my love, he doesn't loves me
+So I tell myself, I tell myself
+I do, I do, I do
+One, don't pick up the phone
+You know he's only calling 'cause he's drunk and alone
+Two, don't let him in
+You have to kick him out again
+Three, don't be his friend
+You know you're gonna wake up in his bed in the morning
+And if you're under him
+You ain't getting over him
+I've got new rules, I count 'em
+I've got new rules, I count 'em
+I've gotta tell them to myself
+I've got new rules, I count 'em
+I've gotta tell them to myself
+Practice makes perfect
+I'm still tryna' learn it by heart (I got new rules, I count 'em)
+Eat, sleep, and breathe it
+Rehearse and repeat it 'cause I (I got new, I got new, I)
+One, don't pick up the phone
+You know he's only calling 'cause he's drunk and alone
+Two, don't let him in
+You have to kick him out again
+Three, don't be his friend
+You know you're gonna wake up in his bed in the morning
+And if you're under him
+You ain't getting over him
+I've got new rules, I count 'em
+I've got new rules, I count 'em
+I've gotta tell them to myself
+I've got new rules, I count 'em (baby you know I count 'em)
+I've gotta tell them to myself
+Don't let him in, don't let him in
+Don't be his friend, don't be his friend
+Don't let him in, don't let him in
+Don't be his friend, don't be his friend
+You ain't getting over him</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WOT-D3-wGE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Rules" id="rjO-H2-4BJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydO-UF-bKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3401" y="826"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gq8-qv-kGJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="Vk2-Jq-UkV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="RYD-a8-Xry"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pNm-Hz-NxX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DSd-H4-yha"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYE-2B-kpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="114.69265367316342"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zIH-bf-KQR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="P0p-hz-vJ6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bML-5o-5De">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vk2-Jq-UkV" kind="relationship" relationship="viewControllers" id="zG0-rH-5lF"/>
+                        <segue destination="TSD-lS-sMq" kind="relationship" relationship="viewControllers" id="GiK-ON-DSV"/>
+                        <segue destination="6GD-wO-S9o" kind="relationship" relationship="viewControllers" id="Wjv-7e-ut7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HlP-R0-zbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74.400000000000006" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hQm-Bx-C8u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TSD-lS-sMq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="NmF-OL-r46"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lU7-EJ-yqt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mRA-sn-fer" kind="relationship" relationship="rootViewController" id="9d1-VI-Qs1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8T-tG-8g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="827"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="7-11 mv" width="788" height="406"/>
+        <image name="Bebe" width="492" height="465"/>
+        <image name="DUA " width="470" height="465"/>
+        <image name="Wechat mv" width="177" height="136"/>
+        <image name="clean" width="523" height="463"/>
+        <image name="higherbrother" width="358" height="333"/>
+        <image name="m i c mv" width="1439" height="627"/>
+        <image name="migos" width="220" height="221"/>
+        <image name="new rules" width="710" height="782"/>
+        <image name="playboi" width="469" height="464"/>
+        <image name="post malone" width="599" height="463"/>
+        <image name="trippie redd" width="475" height="404"/>
+        <image name="xxxtentacion" width="639" height="464"/>
+    </resources>
 </document>
